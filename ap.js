@@ -21,7 +21,7 @@ btn.addEventListener('click', e => {
 		setTimeout(() => {
 			errorMsg.textContent = '';
 			errorMsg.classList = '';
-		}, 1000);
+		}, 2000);
 
 		return;
 	}
@@ -32,10 +32,6 @@ btn.addEventListener('click', e => {
 
 	li.innerHTML = `<b class="bg">Name:</b> ${nameValue} <br/> <b>Email:</b> ${emailValue} <br/> <b>Subject:</b> ${subjectValue}`;
 
-	//li.style.background = "skyblue";
-	//li.children[0].style.background = "skyblue";
-	//li.firstElementChild.style.background = "blue";
-	//li.lastElementChild.style.background = "skyblue";
 	li.classList.add('bg');
 
 	tasks.append(li);
@@ -43,6 +39,4 @@ btn.addEventListener('click', e => {
 	inputName.value = '';
 	inputEmail.value = '';
 	inputSubject.value = '';
-
-	console.log(li);
 });
